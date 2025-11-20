@@ -1,9 +1,10 @@
 # COS802_AfroXLMR_Project
+## Summary Description
 Explores Afro-XLMR for sentiment analysis in low-resource African languages. Fine-tuned on AfriSenti (F1=0.88), but limited zero-shot transfer to isiXhosa (F1=0.48). Few-shot adaptation (500 samples) improved results (F1=0.53). Highlights need for balanced, culturally grounded data.
 
-# Approach and Methodology
+## Approach and Methodology
 To address this challenge, the project will apply transfer learning techniques, specifically cross-lingual transfer, by fine-tuning the multilingual model AfroXLMR on Setswana (or alternatively Swahili), and then testing it on isiXhosa/isiZulu using zero-shot or few-shot setups. This approach enables evaluation of model performance in languages understood by target users, simulates AfriSenti-style sentiment analysis for isiZulu/isiXhosa using transfer learning, and contributes to methodological innovation for low-resource African languages. The methodology is inspired by experiments conducted in the AfriSenti benchmark: A Twitter Sentiment Analysis Benchmark for African Languages (Muhammad, et al., 2023).
 
-# Dataset and Data Description
+## Dataset and Data Description
 Two datasets will be used, a primary and a supplementary source. The primary dataset is AfriSenti, which includes Swahili, Setswana, and Xitsonga, languages that are linguistically close to isiZulu and isiXhosa. The supplementary dataset is the Hugging Face isiXhosa Sentiment Corpus retrieved from michsethowusu/xhosa-sentiments-corpus · Datasets at Hugging Face, which contains sentiment-labeled text data in isiXhosa for binary classification (positive or negative). Sentiments were extracted and processed from English translations of the isiXhosa sentences using DistilBERT. The dataset is part of a broader collection of African language sentiment resources and contains 1,499,997 samples, with 841,785 (56.1%) labeled as positive and 658,212 (43.9%) as negative. Sentiment labels were generated using the distilbert-base-uncased-finetuned-sst-2-english model, with batch preprocessing optimized for efficiency. Duplicate entries were removed based on text content, and only binary sentiment labels were retained (Owusu, 2025).
 
