@@ -21,7 +21,7 @@ To ensure reproducibility, the experiments should be run using the following sof
 - Pandas 2.2.2
 - NumPy 1.26+
 
-The packages are included in the ```requirements.txt``` file and are installed using ```pip install -r requirements.txt```
+The packages are included in the ```requirements.txt``` file and are installed using ```pip install -r requirements.txt```, but in the notebook they are installed line by line without using the requirements file.
 
 ### 5.2 Hardware Requirements
 |Stage|Hardware|Notes|
