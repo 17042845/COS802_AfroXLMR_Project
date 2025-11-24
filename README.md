@@ -14,11 +14,11 @@ The zip file contains the notebook that executes the technical parts of the data
 ### 5.1 Environment requirements
 To ensure reproducibility, the experiments should be run using the following software versions:
 - Python 3.10+
-- PyTorch	2.x (with CUDA 11+ support for GPU training)
-- Transformers (Hugging Face)	4.x
-- Datasets 2.x
-- Scikit-learn 1.x
-- Pandas 2.x
+- PyTorch	2.9.0+cu126 (with CUDA 11+ support for GPU training)
+- Transformers (Hugging Face) 4.57.1
+- Datasets 4.0.0
+- Scikit-learn 1.6.1
+- Pandas 2.2.2
 - NumPy 1.26+
 
 The packages are included in the ```requirements.txt``` file and are installed using ```pip install -r requirements.txt```
